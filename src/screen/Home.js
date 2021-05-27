@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
-import CameraLayout from '../container/Home/CameraLayout';
+import CameraLayout from '../container/Home/CameraLayout/CameraLayout';
 import HomeLayout from '../container/Home/HomeLayout';
 
 
