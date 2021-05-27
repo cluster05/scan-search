@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
-const HomeLayout = ({ toggleScaneMode }) => {
+const HomeLayout = ({ toggleScanMode }) => {
     return (
         <View style={{
             alignItems: 'center',
@@ -27,7 +27,7 @@ const HomeLayout = ({ toggleScaneMode }) => {
                 }}>need to know </Text>
             </View>
             <TouchableOpacity
-                onPress={toggleScaneMode}
+                onPress={toggleScanMode}
                 style={{
                     marginTop: 20
                 }}>

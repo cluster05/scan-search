@@ -13,8 +13,8 @@ const Home = () => {
         <SafeAreaView>
             {
                 scanMode ?
-                    <CameraLayout /> :
-                    <HomeLayout toggleScaneMode={() => setScanMode(true)} />
+                    <CameraLayout toggleScanMode={() => setScanMode(false)} /> :
+                    <HomeLayout toggleScanMode={() => setScanMode(true)} />
 
             }
         </SafeAreaView>
