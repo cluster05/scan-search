@@ -1,11 +1,22 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
+import CameraLayout from '../container/Home/CameraLayout';
+import HomeLayout from '../container/Home/HomeLayout';
+
 
 const Home = () => {
+
+    const [scanMode, setScanMode] = React.useState(false);
+
     return (
         <SafeAreaView>
-            <Text>Home Works</Text>
+            {
+                scanMode ?
+                    <CameraLayout /> :
+                    <HomeLayout toggleScaneMode={() => setScanMode(true)} />
+
+            }
         </SafeAreaView>
     )
 }
